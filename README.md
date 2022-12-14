@@ -1,2 +1,2 @@
 # Game Jokenpo
-Programa que permite que o usuário jogue jokenpo contra o computador.
+Programa desenvolvido em python que permite que o usuário jogue jokenpo contra o computador.
