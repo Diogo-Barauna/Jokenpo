@@ -17,6 +17,11 @@ while res != 'N':
         jogada = 'Papel'
     elif escolha == 3:
         jogada = 'Tesoura'
+    else:
+        print('\n    Escolha inválida')
+        sleep(1)
+        os.system('cls')
+        continue
     #Jogada do pc (randomizador)
     pc = ['Pedra', 'Papel', 'Tesoura']
     jogadapc = choice(pc)
@@ -37,9 +42,9 @@ while res != 'N':
     print('Você está com {}{}{} vitórias'.format('\033[33m',vit,'\033[m'))
     print('O computador está com {}{}{} vitórias\n'.format('\033[33m',vitpc,'\033[m'))
     #Teste resposta sim ou não
-    res = str(input('Jogar novamente? S/N:\n ')).upper()
+    res = str(input('Jogar novamente? S/N: ')).upper()
     if res == 'N':
-        print('Obrigado por jogar, até a próxima!')
+        print('\nObrigado por jogar, até a próxima!')
         break
     sleep(0.5)
     os.system('cls')
